@@ -1,0 +1,14 @@
+import { FaHeart } from "react-icons/fa";
+import Count from "./day05/Count";
+import Heart from "./day05/Heart";
+
+function App() {
+  return (
+    <div>
+      <Count></Count>
+      <Heart></Heart>
+    </div>
+  );
+}
+
+export default App;
