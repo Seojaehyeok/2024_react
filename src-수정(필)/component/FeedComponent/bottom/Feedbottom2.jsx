@@ -2,21 +2,12 @@ import Comment from "./Comment";
 import FeedBottom from "./FeedBottom";
 import Like from "./Like";
 
-const Feedbottom2 = () => {
-
-    const data = {
-        image:"story/story0.jpg",
-        likePeople : ["craig_live", "jeanseal", "seo", "bae", "woo", "choi", "kim"],
-        name: "Joshua",
-        date: "September 19",
-        
-    };
-
+const Feedbottom2 = (props) => {
     return (
         <>
         <FeedBottom />
-        <Like {...data}/>
-        <Comment {...data}/>
+        <Like {...props}/>
+        <Comment {...props}/>
         </>
     );
 };
