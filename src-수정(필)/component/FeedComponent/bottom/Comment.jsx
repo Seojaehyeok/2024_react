@@ -3,15 +3,15 @@ import Diary from "./Diary";
 
 const Comment = (props) => {
     return (
-        <>
-            <div className="px-2">
+        <div className="px-2">
+            <div>
                 <Diary name = {props.name} />
             </div>
 
-            <div className="px-2">
+            <div>
                 <Date date={props.date}/>
             </div>
-        </>
+        </div>
     )
 };
 
