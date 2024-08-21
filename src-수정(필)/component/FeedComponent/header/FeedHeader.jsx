@@ -16,7 +16,8 @@ const FeedHeader = (props) => {
                     <PlaceLabel city={props.city} nation={props.nation} />
                 </div>
             </div>
-            <HiOutlineDotsHorizontal className="text-xl"/>  
+            <div><HiOutlineDotsHorizontal className="text-xl"/>
+            </div>
         </div>
     );
 };
