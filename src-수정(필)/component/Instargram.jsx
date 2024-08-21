@@ -6,6 +6,40 @@ import StoryBoard from "./StoryComponent/StoryBoard";
 
 const Instargram = () => {
 
+  const data = [{
+        image:"/story/story0.jpg",
+        name: "Joshua",
+        isPopular: false,
+        city: "Tokyo",
+        nation: "Japan",
+        images: ["feeds/feed0.jpg","feeds/feed1.jpg","feeds/feed2.jpg"],
+        likePeople : ["craig_live", "jeanseal", "seo", "bae", "woo", "choi", "kim"],
+        date: "September 19",
+  },
+  {
+        image:"/story/story1.jpg",
+        name: "Jinseal",
+        isPopular: false,
+        city: "Seoul",
+        nation: "Korea",
+        images: ["feeds/feed3.jpg","feeds/feed4.jpg","feeds/feed5.jpg"],
+        likePeople : ["craig_live", "abc", "biden", "kfc"],
+        date: "September 21",
+  },
+  {
+        image:"/story/story2.jpg",
+        name: "Biden",
+        isPopular: true,
+        city: "New York",
+        nation: "USA",
+        images: ["feeds/feed6.jpg","feeds/feed7.jpg","feeds/feed8.jpg"],
+        likePeople : ["Trump", "harrison", "xijinping"],
+        date: "September 25",
+  },
+            
+               
+  ];
+
 
 
   return (
@@ -13,7 +47,7 @@ const Instargram = () => {
         <div className="w-full h-full max-w-sm m-auto">
           <Header />
           <StoryBoard />
-          <Feed />            
+          {data.map((v) => <Feed {...v}/>)}             
           <Navigation />
         </div>        
       </div>
